@@ -81,10 +81,28 @@ export async function listCategories() {
 }
 
 export async function getStoreSettings() {
+  const fallback = {
+    id: 0,
+    storeName: "الذهب الأسود",
+    tagline: "نكهات أصيلة من قلب الطبيعة",
+    logoUrl: null,
+    heroImageUrl: null,
+    whatsappNumber: null,
+    phone: null,
+    email: null,
+    currency: "LYD",
+    freeShippingThreshold: "250",
+    localShippingFee: "15",
+    enableWhatsapp: 1,
+    enableOnlinePayment: 0,
+    privacyPolicy: null,
+    terms: null,
+    updatedAt: new Date(),
+  };
   const db = await getDb();
-  if (!db) return undefined;
+  if (!db) return fallback;
   const result = await db.select().from(storeSettings).limit(1);
-  return result[0];
+  return result[0] ?? fallback;
 }
 
 export async function getAdminStats() {

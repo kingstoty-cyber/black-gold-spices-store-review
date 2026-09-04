@@ -528,3 +528,10 @@ html.theme-light .hero-shell .text-\[\#b8ada0\] { color: #b8ada0 !important; }
 html.theme-light .hero-shell .text-\[\#d6b56b\],
 html.theme-light .hero-shell .text-\[\#f6eddb\] { color: #d6b56b !important; }
 html.theme-light .hero-shell .ghost-button { color: #3f382f !important; }
+
+/* Keep the cart total and checkout action above phone safe areas. */
+@media (max-width: 767px) {
+  .cart-drawer-footer {
+    padding-bottom: calc(1.25rem + env(safe-area-inset-bottom)) !important;
+  }
+}
