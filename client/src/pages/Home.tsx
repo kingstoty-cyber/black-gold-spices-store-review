@@ -224,12 +224,15 @@ export default function Home() {
     .slice(0, 6);
   // The category query already returns every matching product; keep the full
   // result so users can browse the complete category on mobile and desktop.
-  const displayFeatured = selectedCategoryId
+  const isSearching = Boolean(search.trim());
+  // Search and category results must show the complete server response. The
+  // featured/best-seller slices are only for the unfiltered storefront home.
+  const displayFeatured = isSearching || selectedCategoryId
     ? products
     : featured.length
       ? featured
       : products.slice(0, 6);
-  const displayBestSellers = selectedCategoryId
+  const displayBestSellers = isSearching || selectedCategoryId
     ? []
     : bestSellers.length
       ? bestSellers
