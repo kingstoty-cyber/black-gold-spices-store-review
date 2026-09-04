@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200">
+<defs><radialGradient id="g"><stop offset="0" stop-color="#d9c98a"/><stop offset="1" stop-color="#25251e"/></radialGradient>
+<linearGradient id="v" x1="0" x2="1"><stop stop-color="#25251e"/><stop offset=".5" stop-color="#8e8a60" stop-opacity=".55"/><stop offset="1" stop-color="#25251e"/></linearGradient>
+<filter id="s"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-opacity=".35"/></filter></defs>
+<rect width="1600" height="1200" fill="#25251e"/><rect x="40" y="40" width="1520" height="1120" rx="70" fill="url(#g)" stroke="#d9c98a" stroke-opacity=".25"/>
+<g><circle cx="127" cy="239" r="25" fill="#8e8a60" opacity="0.35"/><circle cx="210" cy="336" r="36" fill="#8e8a60" opacity="0.47"/><circle cx="293" cy="433" r="19" fill="#8e8a60" opacity="0.59"/><circle cx="376" cy="530" r="30" fill="#8e8a60" opacity="0.35"/><circle cx="459" cy="627" r="41" fill="#8e8a60" opacity="0.47"/><circle cx="542" cy="184" r="24" fill="#8e8a60" opacity="0.59"/><circle cx="625" cy="281" r="35" fill="#8e8a60" opacity="0.35"/></g>
+<ellipse cx="800" cy="650" rx="410" ry="210" fill="#1b1510" opacity=".9" filter="url(#s)"/>
+<ellipse cx="800" cy="610" rx="365" ry="170" fill="#8e8a60" opacity=".9"/>
+<ellipse cx="800" cy="570" rx="330" ry="120" fill="#d9c98a" opacity=".85"/>
+<path d="M450 650 Q800 890 1150 650 L1090 890 Q800 1030 510 890 Z" fill="#1a1510" opacity=".9"/>
+<text x="800" y="260" fill="#f8f0df" font-family="Cairo,Arial,sans-serif" font-size="72" font-weight="700" text-anchor="middle">جبنة لاندانا فقاع+ترفاس</text>
+<text x="800" y="330" fill="#d9c98a" font-family="Cairo,Arial,sans-serif" font-size="30" text-anchor="middle">أجبان ومنتجات مبردة · 30205</text>
+<text x="800" y="1035" fill="#f3e7cf" font-family="Cairo,Arial,sans-serif" font-size="28" text-anchor="middle">الذهب الأسود · جودة مختارة بعناية</text>
+</svg>

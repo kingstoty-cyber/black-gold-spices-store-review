@@ -1,0 +1,34 @@
+{
+  "name": "الذهب الأسود للتوابل",
+  "short_name": "الذهب الأسود",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0f2418",
+  "theme_color": "#0f2418",
+  "dir": "rtl",
+  "lang": "ar",
+  "description": "متجر الذهب الأسود للتوابل والبهارات والحبوب والمكسرات",
+  "id": "/",
+  "orientation": "portrait-primary",
+  "categories": ["shopping", "food", "business"],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    { "name": "تصفح المنتجات", "short_name": "المنتجات", "url": "/#collection", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "حسابي", "short_name": "حسابي", "url": "/account", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] }
+  ],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

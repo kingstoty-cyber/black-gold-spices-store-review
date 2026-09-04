@@ -31,11 +31,10 @@ export function ThemeProvider({
 
   useEffect(() => {
     const root = document.documentElement;
-    if (theme === "dark") {
-      root.classList.add("dark");
-    } else {
-      root.classList.remove("dark");
-    }
+    root.classList.toggle("dark", theme === "dark");
+    root.classList.toggle("theme-dark", theme === "dark");
+    root.classList.toggle("theme-light", theme === "light");
+    root.dataset.theme = theme;
 
     if (switchable) {
       localStorage.setItem("theme", theme);

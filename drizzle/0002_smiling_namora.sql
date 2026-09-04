@@ -1,0 +1,1 @@
+ALTER TABLE `store_settings` MODIFY COLUMN `storeName` varchar(160) NOT NULL DEFAULT 'الذهب الأسود';

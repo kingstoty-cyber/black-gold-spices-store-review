@@ -21,15 +21,17 @@ import {
 } from "@/components/ui/sidebar";
 import { startLogin } from "@/const";
 import { useIsMobile } from "@/hooks/useMobile";
-import { LayoutDashboard, LogOut, PanelLeft, Users } from "lucide-react";
+import { ArrowRight, Boxes, Eye, LayoutDashboard, LogOut, PanelLeft, Settings2, ShoppingCart } from "lucide-react";
 import { CSSProperties, useEffect, useRef, useState } from "react";
 import { useLocation } from "wouter";
 import { DashboardLayoutSkeleton } from './DashboardLayoutSkeleton';
 import { Button } from "./ui/button";
 
 const menuItems = [
-  { icon: LayoutDashboard, label: "Page 1", path: "/" },
-  { icon: Users, label: "Page 2", path: "/some-path" },
+  { icon: LayoutDashboard, label: "نظرة عامة", path: "/admin" },
+  { icon: Boxes, label: "المنتجات", path: "/admin?tab=products" },
+  { icon: ShoppingCart, label: "الطلبات", path: "/admin?tab=orders" },
+  { icon: Settings2, label: "الإعدادات", path: "/admin?tab=settings" },
 ];
 
 const SIDEBAR_WIDTH_KEY = "sidebar-width";
@@ -62,18 +64,18 @@ export default function DashboardLayout({
         <div className="flex flex-col items-center gap-8 p-8 max-w-md w-full">
           <div className="flex flex-col items-center gap-6">
             <h1 className="text-2xl font-semibold tracking-tight text-center">
-              Sign in to continue
+              سجّل الدخول للمتابعة
             </h1>
             <p className="text-sm text-muted-foreground text-center max-w-sm">
-              Access to this dashboard requires authentication. Continue to launch the login flow.
+              هذه المساحة مخصصة للمستخدمين المصرح لهم. ابدأ مسار الدخول الآمن للمتابعة.
             </p>
           </div>
           <Button
             onClick={() => startLogin()}
             size="lg"
             className="w-full shadow-lg hover:shadow-xl transition-all"
-          >
-            Sign in
+            >
+            تسجيل الدخول
           </Button>
         </div>
       </div>
@@ -168,8 +170,8 @@ function DashboardLayoutContent({
               </button>
               {!isCollapsed ? (
                 <div className="flex items-center gap-2 min-w-0">
-                  <span className="font-semibold tracking-tight truncate">
-                    Navigation
+                    <span className="font-semibold tracking-tight truncate">
+                      الذهب الأسود
                   </span>
                 </div>
               ) : null}
@@ -199,7 +201,15 @@ function DashboardLayoutContent({
             </SidebarMenu>
           </SidebarContent>
 
-          <SidebarFooter className="p-3">
+          <SidebarFooter className="space-y-2 p-3">
+            <div className="grid grid-cols-2 gap-2 group-data-[collapsible=icon]:grid-cols-1">
+              <button type="button" onClick={() => setLocation("/")} className="inline-flex h-9 items-center justify-center gap-2 rounded-lg border border-sidebar-border bg-sidebar-accent/40 px-2 text-xs text-sidebar-foreground hover:bg-sidebar-accent" title="معاينة الموقع">
+                <Eye className="h-4 w-4" /> <span className="group-data-[collapsible=icon]:hidden">معاينة الموقع</span>
+              </button>
+              <button type="button" onClick={() => setLocation("/")} className="inline-flex h-9 items-center justify-center gap-2 rounded-lg border border-sidebar-border bg-sidebar-accent/40 px-2 text-xs text-sidebar-foreground hover:bg-sidebar-accent" title="الخروج إلى المتجر">
+                <ArrowRight className="h-4 w-4" /> <span className="group-data-[collapsible=icon]:hidden">خروج</span>
+              </button>
+            </div>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <button className="flex items-center gap-3 rounded-lg px-1 py-1 hover:bg-accent/50 transition-colors w-full text-left group-data-[collapsible=icon]:justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-ring">
@@ -242,16 +252,18 @@ function DashboardLayoutContent({
 
       <SidebarInset>
         {isMobile && (
-          <div className="flex border-b h-14 items-center justify-between bg-background/95 px-2 backdrop-blur supports-[backdrop-filter]:backdrop-blur sticky top-0 z-40">
-            <div className="flex items-center gap-2">
-              <SidebarTrigger className="h-9 w-9 rounded-lg bg-background" />
-              <div className="flex items-center gap-3">
-                <div className="flex flex-col gap-1">
-                  <span className="tracking-tight text-foreground">
-                    {activeMenuItem?.label ?? "Menu"}
-                  </span>
-                </div>
-              </div>
+          <div className="flex min-h-14 items-center justify-between gap-2 border-b bg-background/95 px-2 backdrop-blur supports-[backdrop-filter]:backdrop-blur sticky top-0 z-40">
+            <div className="flex items-center gap-2 min-w-0">
+              <SidebarTrigger className="h-9 w-9 shrink-0 rounded-lg bg-background" />
+              <span className="truncate tracking-tight text-foreground">{activeMenuItem?.label ?? "لوحة الإدارة"}</span>
+            </div>
+            <div className="flex shrink-0 items-center gap-1">
+              <button type="button" onClick={() => setLocation("/")} className="inline-flex h-9 items-center gap-1 rounded-lg px-2 text-xs text-muted-foreground hover:bg-accent hover:text-foreground" aria-label="العودة إلى الموقع">
+                <Eye className="h-4 w-4" /> <span className="hidden xs:inline">الموقع</span>
+              </button>
+              <button type="button" onClick={() => setLocation("/")} className="inline-flex h-9 items-center gap-1 rounded-lg px-2 text-xs text-muted-foreground hover:bg-accent hover:text-foreground" aria-label="الخروج من لوحة الإدارة">
+                <ArrowRight className="h-4 w-4" /> <span className="hidden xs:inline">خروج</span>
+              </button>
             </div>
           </div>
         )}

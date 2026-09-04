@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200">
+<defs><radialGradient id="g"><stop offset="0" stop-color="#d9a441"/><stop offset="1" stop-color="#2b170e"/></radialGradient>
+<linearGradient id="v" x1="0" x2="1"><stop stop-color="#2b170e"/><stop offset=".5" stop-color="#b96d25" stop-opacity=".55"/><stop offset="1" stop-color="#2b170e"/></linearGradient>
+<filter id="s"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-opacity=".35"/></filter></defs>
+<rect width="1600" height="1200" fill="#2b170e"/><rect x="40" y="40" width="1520" height="1120" rx="70" fill="url(#g)" stroke="#d9a441" stroke-opacity=".25"/>
+<g><circle cx="125" cy="335" r="33" fill="#b96d25" opacity="0.35"/><circle cx="208" cy="432" r="44" fill="#b96d25" opacity="0.47"/><circle cx="291" cy="529" r="27" fill="#b96d25" opacity="0.59"/><circle cx="374" cy="626" r="38" fill="#b96d25" opacity="0.35"/><circle cx="457" cy="183" r="21" fill="#b96d25" opacity="0.47"/><circle cx="540" cy="280" r="32" fill="#b96d25" opacity="0.59"/><circle cx="623" cy="377" r="43" fill="#b96d25" opacity="0.35"/></g>
+<ellipse cx="800" cy="650" rx="410" ry="210" fill="#1b1510" opacity=".9" filter="url(#s)"/>
+<ellipse cx="800" cy="610" rx="365" ry="170" fill="#b96d25" opacity=".9"/>
+<ellipse cx="800" cy="570" rx="330" ry="120" fill="#d9a441" opacity=".85"/>
+<path d="M450 650 Q800 890 1150 650 L1090 890 Q800 1030 510 890 Z" fill="#1a1510" opacity=".9"/>
+<text x="800" y="260" fill="#f8f0df" font-family="Cairo,Arial,sans-serif" font-size="72" font-weight="700" text-anchor="middle">تابل كمونية</text>
+<text x="800" y="330" fill="#d9a441" font-family="Cairo,Arial,sans-serif" font-size="30" text-anchor="middle">توابل وبهارات · 30155</text>
+<text x="800" y="1035" fill="#f3e7cf" font-family="Cairo,Arial,sans-serif" font-size="28" text-anchor="middle">الذهب الأسود · جودة مختارة بعناية</text>
+</svg>

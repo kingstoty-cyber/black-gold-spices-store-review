@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200">
+<defs><radialGradient id="g"><stop offset="0" stop-color="#9eae62"/><stop offset="1" stop-color="#17231b"/></radialGradient>
+<linearGradient id="v" x1="0" x2="1"><stop stop-color="#17231b"/><stop offset=".5" stop-color="#4e7048" stop-opacity=".55"/><stop offset="1" stop-color="#17231b"/></linearGradient>
+<filter id="s"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-opacity=".35"/></filter></defs>
+<rect width="1600" height="1200" fill="#17231b"/><rect x="40" y="40" width="1520" height="1120" rx="70" fill="url(#g)" stroke="#9eae62" stroke-opacity=".25"/>
+<g><circle cx="146" cy="282" r="26" fill="#4e7048" opacity="0.35"/><circle cx="229" cy="379" r="37" fill="#4e7048" opacity="0.47"/><circle cx="312" cy="476" r="20" fill="#4e7048" opacity="0.59"/><circle cx="395" cy="573" r="31" fill="#4e7048" opacity="0.35"/><circle cx="478" cy="670" r="42" fill="#4e7048" opacity="0.47"/><circle cx="561" cy="227" r="25" fill="#4e7048" opacity="0.59"/><circle cx="644" cy="324" r="36" fill="#4e7048" opacity="0.35"/></g>
+<ellipse cx="800" cy="650" rx="410" ry="210" fill="#1b1510" opacity=".9" filter="url(#s)"/>
+<ellipse cx="800" cy="610" rx="365" ry="170" fill="#4e7048" opacity=".9"/>
+<ellipse cx="800" cy="570" rx="330" ry="120" fill="#9eae62" opacity=".85"/>
+<path d="M450 650 Q800 890 1150 650 L1090 890 Q800 1030 510 890 Z" fill="#1a1510" opacity=".9"/>
+<text x="800" y="260" fill="#f8f0df" font-family="Cairo,Arial,sans-serif" font-size="72" font-weight="700" text-anchor="middle">زيتون مغربي اسود طبيعي</text>
+<text x="800" y="330" fill="#9eae62" font-family="Cairo,Arial,sans-serif" font-size="30" text-anchor="middle">زيتون ومخللات · 30206</text>
+<text x="800" y="1035" fill="#f3e7cf" font-family="Cairo,Arial,sans-serif" font-size="28" text-anchor="middle">الذهب الأسود · جودة مختارة بعناية</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200">
+<defs><radialGradient id="g"><stop offset="0" stop-color="#b69b62"/><stop offset="1" stop-color="#1b2318"/></radialGradient>
+<linearGradient id="v" x1="0" x2="1"><stop stop-color="#1b2318"/><stop offset=".5" stop-color="#7d6b3f" stop-opacity=".55"/><stop offset="1" stop-color="#1b2318"/></linearGradient>
+<filter id="s"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-opacity=".35"/></filter></defs>
+<rect width="1600" height="1200" fill="#1b2318"/><rect x="40" y="40" width="1520" height="1120" rx="70" fill="url(#g)" stroke="#b69b62" stroke-opacity=".25"/>
+<g><circle cx="177" cy="279" r="21" fill="#7d6b3f" opacity="0.35"/><circle cx="260" cy="376" r="32" fill="#7d6b3f" opacity="0.47"/><circle cx="343" cy="473" r="43" fill="#7d6b3f" opacity="0.59"/><circle cx="426" cy="570" r="26" fill="#7d6b3f" opacity="0.35"/><circle cx="509" cy="667" r="37" fill="#7d6b3f" opacity="0.47"/><circle cx="592" cy="224" r="20" fill="#7d6b3f" opacity="0.59"/><circle cx="675" cy="321" r="31" fill="#7d6b3f" opacity="0.35"/></g>
+<ellipse cx="800" cy="650" rx="410" ry="210" fill="#1b1510" opacity=".9" filter="url(#s)"/>
+<ellipse cx="800" cy="610" rx="365" ry="170" fill="#7d6b3f" opacity=".9"/>
+<ellipse cx="800" cy="570" rx="330" ry="120" fill="#b69b62" opacity=".85"/>
+<path d="M450 650 Q800 890 1150 650 L1090 890 Q800 1030 510 890 Z" fill="#1a1510" opacity=".9"/>
+<text x="800" y="260" fill="#f8f0df" font-family="Cairo,Arial,sans-serif" font-size="72" font-weight="700" text-anchor="middle">حمص متوسط1</text>
+<text x="800" y="330" fill="#b69b62" font-family="Cairo,Arial,sans-serif" font-size="30" text-anchor="middle">بقوليات وحبوب · 30003</text>
+<text x="800" y="1035" fill="#f3e7cf" font-family="Cairo,Arial,sans-serif" font-size="28" text-anchor="middle">الذهب الأسود · جودة مختارة بعناية</text>
+</svg>

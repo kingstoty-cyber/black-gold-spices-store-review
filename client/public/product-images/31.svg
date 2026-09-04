@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200">
+<defs><radialGradient id="g"><stop offset="0" stop-color="#c99a56"/><stop offset="1" stop-color="#201d18"/></radialGradient>
+<linearGradient id="v" x1="0" x2="1"><stop stop-color="#201d18"/><stop offset=".5" stop-color="#8b6239" stop-opacity=".55"/><stop offset="1" stop-color="#201d18"/></linearGradient>
+<filter id="s"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-opacity=".35"/></filter></defs>
+<rect width="1600" height="1200" fill="#201d18"/><rect x="40" y="40" width="1520" height="1120" rx="70" fill="url(#g)" stroke="#c99a56" stroke-opacity=".25"/>
+<g><circle cx="149" cy="403" r="21" fill="#8b6239" opacity="0.35"/><circle cx="232" cy="500" r="32" fill="#8b6239" opacity="0.47"/><circle cx="315" cy="597" r="43" fill="#8b6239" opacity="0.59"/><circle cx="398" cy="154" r="26" fill="#8b6239" opacity="0.35"/><circle cx="481" cy="251" r="37" fill="#8b6239" opacity="0.47"/><circle cx="564" cy="348" r="20" fill="#8b6239" opacity="0.59"/><circle cx="647" cy="445" r="31" fill="#8b6239" opacity="0.35"/></g>
+<ellipse cx="800" cy="650" rx="410" ry="210" fill="#1b1510" opacity=".9" filter="url(#s)"/>
+<ellipse cx="800" cy="610" rx="365" ry="170" fill="#8b6239" opacity=".9"/>
+<ellipse cx="800" cy="570" rx="330" ry="120" fill="#c99a56" opacity=".85"/>
+<path d="M450 650 Q800 890 1150 650 L1090 890 Q800 1030 510 890 Z" fill="#1a1510" opacity=".9"/>
+<text x="800" y="260" fill="#f8f0df" font-family="Cairo,Arial,sans-serif" font-size="72" font-weight="700" text-anchor="middle">شامية اوروج سمسم</text>
+<text x="800" y="330" fill="#c99a56" font-family="Cairo,Arial,sans-serif" font-size="30" text-anchor="middle">أصناف متنوعة · 30031</text>
+<text x="800" y="1035" fill="#f3e7cf" font-family="Cairo,Arial,sans-serif" font-size="28" text-anchor="middle">الذهب الأسود · جودة مختارة بعناية</text>
+</svg>

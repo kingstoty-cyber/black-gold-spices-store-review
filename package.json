@@ -1,5 +1,5 @@
 {
-  "name": "black-gold-spices-store",
+  "name": "noir-atelier-store",
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
@@ -10,7 +10,10 @@
     "check": "tsc --noEmit",
     "format": "prettier --write .",
     "test": "vitest run",
-    "db:push": "drizzle-kit generate && drizzle-kit migrate"
+    "db:push": "drizzle-kit generate && drizzle-kit migrate",
+    "catalog:import": "tsx scripts/import-catalog.ts",
+    "catalog:correct-prices": "tsx scripts/correct-catalog-prices.ts",
+    "catalog:repair-categories": "tsx scripts/repair-catalog-categories.ts"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.693.0",
