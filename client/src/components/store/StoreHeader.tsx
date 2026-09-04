@@ -1,4 +1,4 @@
-import { Menu, Search, ShoppingBag, UserRound, X, ShieldCheck, Sun, Moon, MessageCircle } from "lucide-react";
+import { Menu, Search, ShoppingBag, UserRound, X, ShieldCheck, Sun, Moon, MessageCircle, Palette } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeContext";
 import { useAuth } from "@/_core/hooks/useAuth";
 import { startLogin } from "@/const";
@@ -25,7 +25,7 @@ export function StoreHeader({
   onWhatsapp: () => void;
 }) {
   const { user } = useAuth();
-  const { theme, toggleTheme } = useTheme();
+  const { theme, cycleTheme } = useTheme();
   return (
     <header className="store-header sticky top-0 z-40 border-b border-white/10 bg-[#0c0b0a]/90 backdrop-blur-xl">
       <div className="container flex h-[76px] items-center justify-between gap-4">
@@ -62,8 +62,8 @@ export function StoreHeader({
             <ShoppingBag size={20} />
             {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
           </button>
-          {toggleTheme && <button type="button" onClick={toggleTheme} className="icon-button" aria-label={theme === "dark" ? "تفعيل الوضع الفاتح" : "تفعيل الوضع الليلي"} title={theme === "dark" ? "الوضع الفاتح" : "الوضع الليلي"}>
-            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+          {cycleTheme && <button type="button" onClick={cycleTheme} className="icon-button" aria-label="تغيير الثيم" title={theme === "light" ? "الثيم الليلي" : theme === "dark" ? "ثيم الزعفران" : "الثيم النهاري"}>
+            {theme === "dark" ? <Sun size={18} /> : theme === "saffron" ? <Palette size={18} /> : <Moon size={18} />}
           </button>}
         </div>
       </div>

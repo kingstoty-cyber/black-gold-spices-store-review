@@ -535,3 +535,52 @@ html.theme-light .hero-shell .ghost-button { color: #3f382f !important; }
     padding-bottom: calc(1.25rem + env(safe-area-inset-bottom)) !important;
   }
 }
+
+/* Three polished storefront themes with explicit contrast-safe tokens. */
+html.theme-saffron {
+  --store-bg: #fbf4e6;
+  --store-surface: #fffaf1;
+  --store-card: #fffdf8;
+  --store-text: #2a2118;
+  --store-heading: #3b2413;
+  --store-muted: #756451;
+  --store-border: rgba(99, 63, 25, .16);
+  --store-gold: #b56d19;
+  --background: #fbf4e6;
+  --foreground: #2a2118;
+  --card: #fffdf8;
+  --card-foreground: #2a2118;
+  --popover: #fffaf1;
+  --popover-foreground: #2a2118;
+  --primary: #b56d19;
+  --primary-foreground: #fffaf1;
+  --muted: #f0e4cf;
+  --muted-foreground: #756451;
+  --border: rgba(99, 63, 25, .16);
+  --input: rgba(99, 63, 25, .14);
+  --ring: #b56d19;
+}
+html.theme-saffron body { background: var(--store-bg) !important; color: var(--store-text) !important; }
+html.theme-saffron .store-header { background: rgba(57, 35, 19, .97) !important; color: #fff8eb !important; }
+html.theme-saffron .hero-shell { background: #2e1b10; }
+html.theme-saffron .hero-image { filter: saturate(.92) brightness(.82); }
+html.theme-saffron .product-card, html.theme-saffron .trust-grid > div, html.theme-saffron .spice-process { background: var(--store-card) !important; color: var(--store-text) !important; border-color: var(--store-border) !important; }
+html.theme-saffron .product-card h3, html.theme-saffron .product-card .font-serif, html.theme-saffron .process-title h2, html.theme-saffron .process-steps strong { color: var(--store-heading) !important; }
+html.theme-saffron .product-card p, html.theme-saffron .trust-grid div > div span { color: var(--store-muted) !important; }
+html.theme-saffron .category-card { background: #4a2b16 !important; }
+html.theme-saffron .editorial-banner { background: linear-gradient(120deg, #3f2414, #9a5a1d) !important; }
+html.theme-saffron .gold-button { background: #b56d19 !important; color: #fffaf1 !important; }
+html.theme-saffron .ghost-button { color: #fffaf1 !important; border-color: rgba(255,250,241,.45) !important; }
+html.theme-saffron .mobile-bottom-nav { background: rgba(255,250,241,.98) !important; border-color: var(--store-border) !important; }
+html.theme-saffron .mobile-bottom-nav button { color: #6f5840 !important; }
+html.theme-saffron .field-label, html.theme-saffron .section-heading h2 { color: var(--store-heading) !important; }
+html.theme-saffron .field-label input, html.theme-saffron .field-label textarea { background: #fffaf1 !important; color: var(--store-text) !important; border-color: var(--store-border) !important; }
+html.theme-saffron .editorial-orb { background-image: radial-gradient(circle at 50% 43%, rgba(255,210,119,.55), rgba(94,67,35,.2) 29%, rgba(22,19,16,.04) 62%), url('/manus-storage/spices-kitchen_35d63a56.jpg'); }
+html.theme-light .editorial-orb, html.theme-dark .editorial-orb { background-image: radial-gradient(circle at 50% 43%, rgba(209,173,99,.55), rgba(94,67,35,.25) 29%, rgba(22,19,16,.04) 62%), url('/manus-storage/spices-kitchen_35d63a56.jpg'); }
+html.theme-light .hero-image { filter: saturate(.9) brightness(.9); }
+html.theme-dark .hero-image { filter: saturate(.82) brightness(.72); }
+
+html.theme-saffron .bg-\[\#0c0b0a\] { background: var(--store-bg) !important; }
+html.theme-saffron .text-\[\#f8f2e5\], html.theme-saffron .text-\[\#f5efdf\] { color: var(--store-text) !important; }
+html.theme-saffron .text-\[\#f4eddf\], html.theme-saffron .text-\[\#eee4d2\] { color: var(--store-heading) !important; }
+html.theme-saffron .text-\[\#a29a8e\], html.theme-saffron .text-\[\#80786e\] { color: var(--store-muted) !important; }

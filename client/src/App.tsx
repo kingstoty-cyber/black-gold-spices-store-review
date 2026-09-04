@@ -24,7 +24,7 @@ function AppContent() {
   const { theme } = useTheme();
   return (
     <TooltipProvider>
-      <Toaster theme={theme} position="top-center" richColors />
+      <Toaster theme={theme === "dark" ? "dark" : "light"} position="top-center" richColors />
       <Router />
     </TooltipProvider>
   );

@@ -1,10 +1,11 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 
-type Theme = "light" | "dark";
+export type Theme = "light" | "dark" | "saffron";
 
 interface ThemeContextType {
   theme: Theme;
   toggleTheme?: () => void;
+  cycleTheme?: () => void;
   switchable: boolean;
 }
 
@@ -24,7 +25,9 @@ export function ThemeProvider({
   const [theme, setTheme] = useState<Theme>(() => {
     if (switchable) {
       const stored = localStorage.getItem("theme");
-      return (stored as Theme) || defaultTheme;
+      return stored === "dark" || stored === "saffron" || stored === "light"
+        ? stored
+        : defaultTheme;
     }
     return defaultTheme;
   });
@@ -34,6 +37,7 @@ export function ThemeProvider({
     root.classList.toggle("dark", theme === "dark");
     root.classList.toggle("theme-dark", theme === "dark");
     root.classList.toggle("theme-light", theme === "light");
+    root.classList.toggle("theme-saffron", theme === "saffron");
     root.dataset.theme = theme;
 
     if (switchable) {
@@ -46,9 +50,16 @@ export function ThemeProvider({
         setTheme(prev => (prev === "light" ? "dark" : "light"));
       }
     : undefined;
+  const cycleTheme = switchable
+    ? () => {
+        setTheme(prev =>
+          prev === "light" ? "dark" : prev === "dark" ? "saffron" : "light"
+        );
+      }
+    : undefined;
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme, switchable }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme, cycleTheme, switchable }}>
       {children}
     </ThemeContext.Provider>
   );

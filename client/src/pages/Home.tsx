@@ -34,7 +34,7 @@ import { useAuth } from "@/_core/hooks/useAuth";
 import { startLogin } from "@/const";
 import type { Product } from "../../../drizzle/schema";
 
-const HERO_IMAGE = "/product-images/hero-spices.svg";
+const HERO_IMAGE = "/manus-storage/spices-dark_a0717697.jpeg";
 const CATEGORY_IMAGES = [
   "/product-images/category-1.svg",
   "/product-images/category-2.svg",
